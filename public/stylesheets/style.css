@@ -81,11 +81,13 @@ input[type=number]  {
   font-style: italic;
 }
 
+
+
 a {
   color: #ffffff;
-  text-decoration: none;
-  
+  text-decoration: none; 
 }
+
 
 a:visited {
   color: #ffffff;
@@ -99,4 +101,9 @@ button {
 h1 {
   font-style: italic;
   font-weight: bold;
+}
+
+#nav a {
+  padding-bottom: 10px;
+  border: 1.25rem solid black;
 }
