@@ -24,6 +24,7 @@ app.locals.title = `${capitalized(projectName)}- Generated with Ironlauncher`
 const index = require('./routes/index')
 app.use('/', index)
 
+
 const droneRoutes = require('./routes/drones')
 app.use('/', droneRoutes)
 
