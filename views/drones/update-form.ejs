@@ -1,1 +1,19 @@
 <h2>Update the drone</h2>
+<form action="/drones/<%= one._id %>/edit" method="POST">
+    <label for="name">Drone Name:
+        <input type="text" name="name" value="<%= one.name %>" >
+    </label>
+    <br>
+    <label for="propellers">Number of propellers:
+        <input type="number" name="propellers" value="<%= one.propellers %>">
+    </label>
+    <br>
+    <label for="maxSpeed">Max Speed:
+        <input type="number" name="maxSpeed" value="<%= one.maxSpeed %>">
+    </label>
+    <br>
+    <button type="submit">Submit Drone</button>
+</form>
+<form method="POST" action="/drones/<%= one._id %>/delete">
+    <button type="submit">Delete Drone</button>
+</form>

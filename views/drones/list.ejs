@@ -1,1 +1,8 @@
+
 <h2>Available drones</h2>
+<% list.forEach(drone => { %>
+    <h1><%= drone.name %> </h1>
+    <h3>Number of Propellers: <%= drone.propellers %> </h3>
+    <h3>Max speed: <%= drone.maxSpeed %>m/s</h3>
+    <a href="/drones/<%= drone._id %>/edit">Edit Details</a>
+<% }) %>
