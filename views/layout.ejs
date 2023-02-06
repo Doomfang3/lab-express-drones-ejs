@@ -9,8 +9,17 @@
   </head>
 
   <body>
+    <nav style="display: flex; justify-content: space-around;">
+      <button onclick={window.history.back()}> < Back </button>
+      <a href="/">Home</a>
+    </nav>
     <%- body %>
-
+    <br>
+    <br>
+    <a href="/drones">List of drones</a>
+    <br>
+    <br>
+    <a href="/drones/create">Add new Drone</a>
     <script src="/js/script.js"></script>
   </body>
 </html>
